@@ -28,9 +28,9 @@ app.post("/", (req, res) =>{
       to: email,
       from: 'cnagar403@gmail.com',
       //from: 'cnagar@deakin.edu.au',
-      subject: 'Sending with Twilio SendGrid is Fun',
-      text: 'and easy to do anywhere, even with Node.js',
-      html: '<strong>and easy to do anywhere, even with Node.js</strong>',
+      subject: 'Welcome Email',
+      text: 'Welcome new subscriber to my website',
+      html: '<strong>Welcome new subscriber to my website</strong>',
   };
 
   sgMail
