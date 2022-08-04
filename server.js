@@ -1,8 +1,13 @@
 const express = require("express")
 const bodyParser = require("body-parser")
 const https = require("https")
+//require("dotenv").config()
 const sgMail = require('@sendgrid/mail');
+const { stringify } = require("querystring");
 sgMail.setApiKey("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");
+//const apiKey = `${process.env.SENDGRID_API_KEY}`;
+//sgMail.setApiKey(apiKey);
+//console.log(apiKey)
 
 
 
@@ -38,7 +43,7 @@ app.post("/", (req, res) =>{
     console.error(error)
   })
 
-  res.send("I am posting now")
+  res.send("Email Sent Successfully")
 
 })
 
